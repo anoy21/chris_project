@@ -1,0 +1,45 @@
+body {
+    margin: 0; /* Remove default margin */
+}
+
+#header {
+height: 40vh;
+background-color: #EB455F;
+}
+
+#navbar {
+    display: flex;
+    align-items: center; /* Align items vertically in the flex container */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+#logo {
+    max-height: 50px; /* Set a max height for the logo */
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto; /* Align items to the right */
+    column-gap: 3rem;
+    transform: translateX(160%);
+}
+
+.navitem {
+    margin: 0; /* Remove default margin for list items */
+}
+
+a {
+    text-decoration: none;
+    color: #FCFFE7;
+    font-family: 'Poppins', sans-serif;
+}
+
+#waves {
+    margin-top: 20vh;
+    /* margin-bottom: 10px; */
+}
+
+/* Add more styles as needed */
