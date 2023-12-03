@@ -1,16 +1,21 @@
 body {
     margin: 0; /* Remove default margin */
+    height: 200vh;
+    overflow-x: hidden;
 }
 
 #header {
-height: 40vh;
-background-color: #EB455F;
+    height: 40vh;
+    background-color: #EB455F;
 }
 
 #navbar {
     display: flex;
     align-items: center; /* Align items vertically in the flex container */
     padding: 1rem; /* Add padding for better spacing */
+    background-color: #EB455F;
+    width: 100%;
+    top: 0;
 }
 
 #logo {
@@ -29,6 +34,7 @@ background-color: #EB455F;
 
 .navitem {
     margin: 0; /* Remove default margin for list items */
+    position: relative; /* Set position relative for child positioning */
 }
 
 a {
@@ -37,9 +43,36 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 
-#waves {
-    margin-top: 20vh;
-    /* margin-bottom: 10px; */
+.hoverline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FCFFE7;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
 }
 
-/* Add more styles as needed */
+.navitem:hover .hoverline {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#waves {
+    margin-top: 20vh ;
+
+}
+
+.bigtext {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#textcont {
+display: block;
+margin: 0;
+}
