@@ -1,0 +1,57 @@
+body {
+    padding-top: 80px;
+    background-color: #2B3467;
+    cursor: none !important;
+  }
+
+  body button{
+    cursor: none !important;
+  }
+  
+  .col{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .modal-content{
+    color:#6A9C89;
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    background-color: #FCFFE7;
+    margin-bottom: 20px;
+    color: #6A9C89;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .card a{
+    background-color: #EB455F;
+    outline: none;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red; /* Replace with your actual color value */
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(.3);
+    z-index: 9999;
+  }
+  
+  .custom-cursor--link {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+  

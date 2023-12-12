@@ -1,0 +1,324 @@
+@media (max-width: 2000px) {
+    body {
+        margin: 0; /* Remove default margin */
+        height: 1200vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: #527853;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      font-family: 'Poppins', sans-serif;
+      font-size: 500px;
+    }
+
+    .navlist {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: auto; /* Align items to the right */
+            column-gap: 3rem;
+            padding-left: 65rem;
+            font-size: 1.25rem;
+        }
+
+        .hoverline {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FCFFE7;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+        }
+        
+        .navitem:hover .hoverline {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+
+
+
+body {
+    margin: 0; /* Remove default margin */
+    height: 1200vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #527853;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FCFFE7; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #527853; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #EB455F; 
+    transition: 400ms;
+  } */
+  
+#header {
+    background-color: #EB455F;
+    max-height: 22vh;
+    /* background-color: #EB455F; */
+}
+
+.scroll-header {
+    background-color:#527853;
+    z-index: 4;
+    transition: 400ms;
+}
+
+#navbar {
+    z-index: 4;
+    display: flex;
+    align-items: center; /* Align items vertically in the flex container */
+    width: 100%;
+    top: 0;
+    transition: 400ms;
+    position: fixed;
+    padding: 1rem;
+}
+
+#logo {
+    max-height: 50px; /* Set a max height for the logo */
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto; /* Align items to the right */
+    column-gap: 3rem;
+    padding-left: 37rem;
+
+}
+
+.navitem {
+    margin: 0; /* Remove default margin for list items */
+    position: relative; /* Set position relative for child positioning */
+}
+
+a {
+    text-decoration: none;
+    color: #FCFFE7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hoverline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FCFFE7;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.navitem:hover .hoverline {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#waves {
+min-height: 100vh;
+width: 100%;
+position: relative;
+}
+
+#filler{
+    background-color: #EB455F;
+    min-height: 20vh;
+}
+
+svg {
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+}
+
+.bigtext {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0px;
+width: 50vw;
+}
+
+.bigtext img {
+    position: relative;
+}
+
+
+#textcont {
+max-width: 50vw;
+transform: translate(85%,0);
+position: absolute;
+display: block;
+margin: 0;
+color: #FCFFE7;
+font-family: 'Gwendolyn', cursive;
+}
+
+#textcont h2 {
+    margin: 0;
+}
+
+#santa {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 10rem;
+}
+
+#santa h4 {
+    margin-top: 35vh;
+    font-family: 'Gwendolyn', cursive;
+}
+
+#target {
+    position: absolute;
+    transform: translateX(100%);
+    width: 100%;
+    height: 50vh;
+}
+
+.info {
+    opacity: 0;
+    transform: translateY(30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    color: #FCFFE7;
+    text-align: center;
+}
+
+.info img{ 
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+    border-radius: 30px;
+    transform: translateX(100%);
+}
+
+.scroll-class {
+    opacity: 1;
+    transition: 3s;
+}
+
+#canvas {
+    height: 170vh;
+    position: absolute;
+    z-index: 4;
+    object-fit: cover;
+}
+
+#about-section{
+    background-color: #FCFFE7;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Adjust the gap between grid items as needed */
+    align-items: start;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: grid;
+    background-color: #FCFFE7;
+    color: #EB455F;
+
+}
+
+#about h2{
+    font-size: 60px;
+    
+}
+
+#about p {
+    font-size: 1.25rem;
+}
+
+#office {
+    padding-top: 5rem;
+    background-color: #BAD7E9;
+    text-align: center;
+  }
+
+  .grid-container {
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  figure {
+    position: relative;
+  }
+
+ #office img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* transition: transform 0.3s ease-in-out; */
+  }
+
+ /* #office img:hover {
+    transform: scale(1.1);
+  } */
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .flex img {
+    margin-top: auto; /* Align to the bottom of the figure */
+  }
+
+  #office h2 {
+    font-size: 60px;
+    color: #EB455F;
+    text-align: center;
+  }

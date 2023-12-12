@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+<link rel="stylesheet" href="snow.scss">
+</head>
+<body data-scroll-container>
+
+    <canvas id="canvas"></canvas>
+
+<div id="header">
+    <nav data-scroll data-scroll data-scroll-speed="0" id="navbar">
+        <img id="logo" src="/img/logo.png" alt="">
+        <a style="font-family: 'Poppins', sans-serif; font-size: 30px;" href="">Merry Christmas</a>
+
+        <div data-scroll data-scroll-speed="0" data-scroll-sticky="" id="navmenu">
+            <ul class="navlist">
+                <li class="navitem">
+                        <a href="">Home</a>
+                        <div class="hoverline"></div>
+                </li>
+                <li class="navitem">
+                        <a data-scroll data-scroll-to href="#about-section">About Us</a>
+                        <div class="hoverline"></div>
+                </li>
+                <li class="navitem">
+                        <a target="_blank" href="/store/store.html">Products</a>
+                        <div class="hoverline"></div>
+                </li>
+                <li class="navitem">
+                        <a href="navlink">Notes</a>
+                        <div class="hoverline"></div>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+
+        <div id="filler"></div>
+
+    <div id="waves" data-scroll-sticky data-scroll data-scroll-speed="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#EB455F" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,101.3C240,139,300,213,360,250.7C420,288,480,288,540,256C600,224,660,160,720,122.7C780,85,840,75,900,80C960,85,1020,107,1080,138.7C1140,171,1200,213,1260,202.7C1320,192,1380,128,1410,96L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+            </svg>
+
+            <div class="bigtext">
+                <img class="tree" src="/img/tree.png" draggable="false" alt="">
+                <div id="textcont">
+                    <h2 data-scroll data-scroll-positon="top" data-scroll-speed="2" style="font-size: 100px;">Merry Christmas</h2>
+                    <h2 data-scroll data-scroll-positon="top" data-scroll-speed="2" style="font-size: 50px ;"> and Happy New Year</h4>
+                </div>
+            </div>
+    </div>
+
+        <div id="santa">
+            <div id="target"></div>
+            <h4 data-scroll data-scroll-speed="-15" data-scroll-delay="1.5" data-scroll-target="#target" data-scroll-direction="horizontal">HO! HO! HO!</h4>
+            <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#target" draggable="false"  src="/img/santa3.png" alt="">
+        </div>
+
+        <!-- <div draggable="false" data-scroll  data-scroll-class="scroll-class" class="info"> 
+            <img data-scroll data-scroll-direction="vertical" data-scroll-speed=".5" src="/img/gal1.jpg" alt="">
+            <h3 data-scroll data-scroll-direction="vertical" data-scroll-speed="-.5" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptas quam perspiciatis laboriosam provident facere perferendis! Illum, dolores quibusdam. Itaque aperiam aspernatur suscipit, exercitationem excepturi reprehenderit debitis commodi quas minima?</p>
+        </div> -->
+
+        
+
+        <section id="about-section" class="py-40 bg-green-50">
+            <div class="container2 px-5 mx-auto">
+                <div id="about" class="lg:grid grid-cols-2 gap-4 items-start">
+                    <h2 data-scroll data-scroll-sticky data-scroll-target="#about">About Us</h2>
+                    <div class="text-xl pt-4 lg:pt-0">
+                        <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium, ante sed lacinia ultricies, sapien massa ultricies erat, eu tristique justo est ut tortor. In nibh est, porttitor vulputate erat et, faucibus volutpat felis. Curabitur eleifend nisi quis consectetur euismod. Morbi ac condimentum ante. Aliquam euismod sodales arcu et iaculis. Cras porttitor nisl felis, eget interdum magna cursus et. Curabitur vehicula dignissim ornare.</p>
+                        <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium, ante sed lacinia ultricies, sapien massa ultricies erat, eu tristique justo est ut tortor. In nibh est, porttitor vulputate erat et, faucibus volutpat felis. Curabitur eleifend nisi quis consectetur euismod. Morbi ac condimentum ante. Aliquam euismod sodales arcu et iaculis. Cras porttitor nisl felis, eget interdum magna cursus et. Curabitur vehicula dignissim ornare.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="office" data-scroll class="py-20">
+            <div class="grid-container">
+                <figure>
+                    <h2 data-scroll-offset="100,500" data-scroll data-scroll-sticky data-scroll-target="#office">The Gift that keeps on giving</h2>
+                  </figure>
+                <figure>
+                    <h2 style="z-index: 4;" data-scroll data-scroll-offset="10%,300" data-scroll-speed="4.8">The Holiday Spirit</h2>
+                  </figure>
+              <figure class="flex">
+                <img class="shadow-lg" width="1000" height="667" src="/img/gal1.jpg" alt="" data-scroll data-scroll-speed="3.8">
+              </figure>
+              <figure>
+                <img class="shadow-lg" width="1000" height="1498" src="/img/gal2.jpg" alt="" data-scroll data-scroll-speed="2.4">
+              </figure>
+            </div>
+        </section>                
+</div>
+
+           
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="https://app.embed.im/snow.js" defer></script> -->
+</body>
+</html>
