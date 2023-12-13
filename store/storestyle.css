@@ -4,6 +4,10 @@ body {
     cursor: none !important;
   }
 
+  .has-scroll-smooth [data-scroll-container] {
+    transform: perspective(0.1px);
+}
+
   body button{
     cursor: none !important;
   }

@@ -1,49 +1,14 @@
-@media (max-width: 2000px) {
-    body {
-        margin: 0; /* Remove default margin */
-        height: 1200vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-color: #527853;
-      -webkit-user-select: none; /* Safari */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
-      font-family: 'Poppins', sans-serif;
-      font-size: 500px;
-    }
+#t1{
+    font-size: 30px;
+}
 
-    .navlist {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            margin-left: auto; /* Align items to the right */
-            column-gap: 3rem;
-            padding-left: 65rem;
-            font-size: 1.25rem;
-        }
+#big{
+    font-size: 100px;
+}
 
-        .hoverline {
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #FCFFE7;
-            bottom: 0;
-            left: 0;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-in-out;
-            z-index: 1;
-        }
-        
-        .navitem:hover .hoverline {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-    }
-
-
+#small{
+    font-size: 50px;
+}
 
 body {
     margin: 0; /* Remove default margin */
@@ -56,24 +21,6 @@ body {
   user-select: none; /* Standard syntax */
   font-family: 'Poppins', sans-serif;
 }
-
-
-
-/* ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #FCFFE7; 
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #527853; 
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #EB455F; 
-    transition: 400ms;
-  } */
   
 #header {
     background-color: #EB455F;
@@ -149,6 +96,20 @@ width: 100%;
 position: relative;
 }
 
+#whitewave{
+width: 100%;
+position: absolute;
+transform: translateY(60%);
+}
+
+@media (min-width: 1850px) {
+    #whitewave{
+        width: 100%;
+        position: absolute;
+        transform: translateY(80%) !important;
+        }
+}
+
 #filler{
     background-color: #EB455F;
     min-height: 20vh;
@@ -166,7 +127,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 0px;
-width: 50vw;
+width: 100%;
+transform: translateX(-24%);
 }
 
 .bigtext img {
@@ -197,7 +159,7 @@ font-family: 'Gwendolyn', cursive;
     width: 100%;
     font-size: 100px;
     color: white;
-    margin-bottom: 10rem;
+    padding-bottom: 10.5vh
 }
 
 #santa h4 {
@@ -272,15 +234,16 @@ font-family: 'Gwendolyn', cursive;
 
 #about p {
     font-size: 1.25rem;
+    
 }
 
 #office {
-    padding-top: 5rem;
+    padding-top: 40rem;
     background-color: #BAD7E9;
     text-align: center;
   }
 
-  .grid-container {
+  #grid-container {
     justify-content: center;
     align-content: center;
     display: grid;
@@ -322,3 +285,161 @@ font-family: 'Gwendolyn', cursive;
     color: #EB455F;
     text-align: center;
   }
+
+  @media (min-width: 1850px) {
+    body {
+        margin: 0; /* Remove default margin */
+        height: 1200vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: #527853;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #navmenu{
+        padding-left: 25rem;
+    }
+
+    .navlist {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: auto; /* Align items to the right */
+            column-gap: 3rem;
+            font-size: 1.5rem;
+            padding: 1rem;
+            padding-left: 500px;
+        }
+
+        .hoverline {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #FCFFE7;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+        }
+        
+        .navitem:hover .hoverline {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .bigtext {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            width: 100%;
+            transform: translateX(-30%) !important;
+            }
+        
+        #big {
+            font-size: 150px !important;
+        }
+
+        #small{
+            font-size: 100px !important;
+        }
+
+        .tree{
+            height: 60vh !important;
+        }
+
+        #textcont{
+                max-width: 50vw;
+                transform: translate(85%,33%) !important;
+                position: absolute;
+                display: block;
+                margin: 0;
+                color: #FCFFE7;
+                font-family: 'Gwendolyn', cursive;
+                
+        }
+
+        #t1{
+            font-size: 40px !important;
+        }
+
+        #santa h4 {
+            font-size: 180px !important;
+        }
+
+        #santa img{
+        height: 300px;
+        }
+
+        #about-section{
+            background-color: #FCFFE7;
+            /* padding-bottom: 60rem; */
+            /* padding-top: 60rem; */
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #about {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem; /* Adjust the gap between grid items as needed */
+            align-items: start;
+            padding-left: 7rem;
+            padding-right: 7rem;
+            display: grid;
+            background-color: #FCFFE7;
+            color: #EB455F;
+        
+        }
+        
+        #about h2{
+            font-size: 60px;
+            z-index: 4;
+        }
+        
+        #about p {
+            font-size: 1.25rem;
+        }
+
+        #whitewave{
+        width: 100%;
+        position: absolute;
+        transform: translateY(120%);
+        }
+        
+    }
+
+    #destination {
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        transform: translateY(750%);
+        padding-top: 4rem;
+    }
+
+    .has-scroll-smooth [data-scroll-container] {
+        transform: perspective(1px);
+    }
+    
+    #gift {
+        transform: translateY(100%);
+    }
+
+    #temp{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        transform: translateY(30%);
+    }
+
+    #FUCK {
+        margin: 0;
+    }
+
