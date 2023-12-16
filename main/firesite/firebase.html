@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In!</title>
+    <link rel="stylesheet" href="firestyle.css">
+    <link rel="icon" href="/img/giving2.png">
+
+	<!-- include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+      // Replace with your app config object
+    const firebaseConfig = {
+        apiKey: "AIzaSyDm7GNishssmgelc1q9zbAaE7br4MW3ISI",
+        authDomain: "wifi-demo2.firebaseapp.com",
+        databaseURL: "https://wifi-demo2-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "wifi-demo2",
+        storageBucket: "wifi-demo2.appspot.com",
+        messagingSenderId: "44468860594",
+        appId: "1:44468860594:web:71957ad26d27f259e77bab"
+    };
+      // Initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Make auth and database references
+      const auth = firebase.auth();
+      const db = firebase.database();
+
+    </script>
+</head>
+<body>
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" id="username" name="txt" placeholder="User name" required="">
+					<input type="email" id="email" name="email" placeholder="Email" required="">
+					<input type="password" id="password" name="pswd" placeholder="Password" required="">
+					<button id="signup">Sign up</button>
+				</form>
+			</div>
+
+			<div  class="login">
+				<form id="login-form">
+					<label for="chk" aria-hidden="true">Login</label>
+					<!-- <label for="input-email"><b>Email</b></label> -->
+					<input type="email" name="email" placeholder="Email" required="">
+					<!-- <label for="input-password"><b>Password</b></label> -->
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button id="login">Login</button>
+					<p id="error-message" style="color:red;"></p>
+				</form>
+			</div>
+	</div>
+  
+  <script src="https://app.embed.im/snow.js" defer></script>
+	<script src="firecode.js" defer type="module"></script>
+	<script src="./login.js"></script>
+</body>
+</html>

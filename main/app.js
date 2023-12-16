@@ -79,9 +79,31 @@ scroll.on("scroll", (instance) => {
   }
 });
 
+//footer
 
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
 
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+//sign up login
+
+document.getElementById('contact').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default behavior of the anchor link
+  toggleFormVisibility();
+});
+
+function toggleFormVisibility() {
+  var formWrap = document.querySelector('.form-wrap');
+  formWrap.style.display = (formWrap.style.display === 'none' || formWrap.style.display === '') ? 'block' : 'none';
+}
 
 //gsap
 

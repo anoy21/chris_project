@@ -8,14 +8,47 @@ body {
     transform: perspective(0.1px);
 }
 
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+  .col button {
+    width: 8rem;
+    background: none;
+    border: 2px solid #FCFFE7;
+    color: #FCFFE7;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+  }
+
+  #main-navbar{
+    transition: 0.25s;
+  }
+
   body button{
     cursor: none !important;
+  }
+
+  .container{
+    border-radius: 4rem ;
   }
   
   .col{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    background-color: #EB455F;
+    padding: 0.5rem;
+  }
+
+  .navbar{
+    padding: 0rem;
+    border-bottom: solid 1px #FCFFE7;
+
   }
 
   .modal-content{

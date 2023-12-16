@@ -1,19 +1,21 @@
 
 <html lang="en">
+  <title>Store</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="storestyle.css">
+    <link rel="icon" href="/img/new1.png">
 </head>
 <body>
 
 
     <!-- Nav -->
-<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+<nav id="main-navbar" class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
     <div class="row">
         <div class="col">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+          <button type="button" class="btn" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn">Clear Cart</button></div>
     </div>
 </nav>
 
@@ -25,7 +27,7 @@
         <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="/img/new1.png" alt="Card image cap">
   <div class="card-block">
-    <h4 class="card-title">Orange</h4>
+    <h4 class="card-title">ReinDeer</h4>
     <p class="card-text">Price: $0.5</p>
     <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
   </div>
@@ -35,7 +37,7 @@
         <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="/img/gift1.png" alt="Card image cap">
   <div class="card-block">
-    <h4 class="card-title">Banana</h4>
+    <h4 class="card-title">GingerBread</h4>
     <p class="card-text">Price: $1.22</p>
     <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
   </div>
@@ -45,7 +47,7 @@
         <div class="card" style="width: 20rem;">
   <img class="card-img-top" src="/img/gift2.png" alt="Card image cap">
   <div class="card-block">
-    <h4 class="card-title">Lemon</h4>
+    <h4 class="card-title">Hat</h4>
     <p class="card-text">Price: $5</p>
     <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
   </div>
@@ -56,7 +58,7 @@
     <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/gift5.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Candy Cane</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -66,7 +68,7 @@
   <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/gift4.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Snowman</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -76,7 +78,7 @@
   <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/gift5.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Candy Cane</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -86,7 +88,7 @@
   <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/giving1.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Gift</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -96,7 +98,7 @@
   <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/giving2.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Bells</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -106,7 +108,7 @@
   <div class="card" style="width: 20rem;">
 <img class="card-img-top" src="/img/tree.png" alt="Card image cap">
 <div class="card-block">
-<h4 class="card-title">Lemon</h4>
+<h4 class="card-title">Christmas Tree</h4>
 <p class="card-text">Price: $5</p>
 <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
 </div>
@@ -143,6 +145,7 @@
 
 <div class="custom-cursor"></div>
 
+<script src="https://app.embed.im/snow.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="storejs.js"></script>

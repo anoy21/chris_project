@@ -1,5 +1,24 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const navbar = document.getElementById("main-navbar");
+  let lastScrollY = window.scrollY;
 
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
 
+    if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+      // Scrolling down, hide the navbar
+      navbar.style.top = `-${navbar.offsetHeight}px`;
+    } else {
+      // Scrolling up or near the top, show the navbar
+      navbar.style.top = "0";
+    }
+
+    lastScrollY = currentScrollY;
+  }
+
+  // Attach the event listener
+  window.addEventListener("scroll", handleScroll);
+});
 // ************************************************
 // Shopping Cart API
 // ************************************************
